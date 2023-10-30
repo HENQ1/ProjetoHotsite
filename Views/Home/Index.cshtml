@@ -1,0 +1,140 @@
+﻿@model Interesse
+@{
+    ViewData["Title"] = "Hotsite";
+}
+
+<div class="row">
+    <div class="col-6">
+        <h1>Iniciativa Saúde da Cidade</h1>
+        <p>
+            Texto sobre vida saudável: Lorem ipsum dolor<br> sit amet et delectus accommodare his consul <br> copiosae
+            legendos at vix ad putent delectus<br> delicata usu. Vidit dissentiet eos cu eum an <br>brute copiosae
+            hendrerit.<br><br>
+        </p>
+        <p>
+            Texto sobre vida iniciativa: Lorem ipsum dolor <br> sit amet et delectus accommodare his consul <br>
+            copiosae legendos at vix ad putent delectus<br> delicata usu. Vidit dissentiet eos cu eum an <br>brute
+            copiosae hendrerit.
+        </p>
+
+
+
+
+    </div>
+
+
+    <div class="col-6 mb-3">
+        <img src="~/coracao.jpeg" width="100%">
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-6 border border-dark">
+        <h2>Entre em contato!:</h2>
+        <p>Nos mande uma mensagem e fique por dentro de nossos eventos</p>
+
+        <form method="POST" id="formCadastro">
+            <div>
+                <label asp-for="Nome">Nome:</label>
+                <input asp-for="Nome" id="idNome" />
+            </div>
+            <div>
+                <label asp-for="Email">Email:</label>
+                <input id="idEmail" />
+            </div>
+            <div>
+                <label asp-for="Mensagem">Mensagem:</label>
+                <textarea asp-for="Mensagem" id="idMensagem"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Enviar" id="idBotao" />
+            </div>
+        </form>
+    </div>
+    <figure class="col-2">
+        <img src="~/agenda.png" alt="" style="width:80%">
+        <figcaption><a href="#" data-toggle="modal" data-target="#idAgenda">Agenda de eventos</a></figcaption>
+    </figure>
+    <figure class="col-2">
+        <img src="~/vida.jpeg" alt="" style="width:200px">
+        <figcaption><a href="#" data-toggle="modal" data-target="#idDicas">Dicas de vida saudável</a></figcaption>
+    </figure>
+    <figure class="col-2">
+        <img src="~/apoiadores.jpg" alt="" style="width:200px">
+        <figcaption><a href="#" data-toggle="modal" data-target="#idApoiadores">Apoiadores</a></figcaption>
+    </figure>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="idAgenda" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Agenda</h5>
+                </div>
+                <div class="modal-body text-center">
+                    <p>Dia 01/04/2024</p>
+                    <p>Evento do evento para efetuar o evendo para que o evento fique em dia.</p>
+                    <p>Dia 21/08/2025</p>
+                    <p>Evento do evento para efetuar o evendo para que o evento fique em dia.</p>
+                    <p>Dia 30/12/2026</p>
+                    <p>Evento do evento para efetuar o evendo para que o evento fique em dia.</p>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="idDicas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-center" id="exampleModalLabel">Dicas de vida saudável</h5>
+            </div>
+            <div class="modal-body text-center">
+                </p>
+                <p> 8 passos para um estilo de vida saudável
+                <p> Dormir bem.</p>
+                <p>Beber água. </p>
+                <p>Praticar exercícios físicos. </p>
+                <p>Dedicar tempo para fazer o que gosta.</p>
+                <p> Ter uma dieta equilibrada. </p>
+                <p> Fazer exames periódicos. </p>
+                <p> Manter o peso.</p>
+                <p>Trabalhar com o que gosta.</p>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="modal fade" id="idApoiadores" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-center" id="exampleModalLabel">Apoiadores</h5>
+            </div>
+            <div class="modal-body text-center">
+
+                <img src="~/apoio.webp" width="180px" height="180px">
+                <h4>Empresa 1</h4>
+                <img src="~/apoio.webp" width="180px" height="180px">
+                <h4>Empresa 2</h4>
+                <img src="~/apoio.webp" width="180px" height="180px">
+                <h4>Empresa 3</h4>
+                <img src="~/apoio.webp" width="180px" height="180px">
+                <h4>Empresa 4</h4>
+                <img src="~/apoio.webp" width="180px" height="180px">
+                <h4>Empresa 5</h4>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+</div>
